@@ -283,7 +283,6 @@ $GLOBALS['strSendDeactivationWarning'] = "Versenden eine Benachrichtigungsmail, 
 $GLOBALS['strAllowClientModifyBanner'] = "Werbetreibender darf eigene Banner verändern";
 $GLOBALS['strAllowClientDisableBanner'] = "Werbetreibender darf eigene Banner deaktivieren";
 $GLOBALS['strAllowClientActivateBanner'] = "Werbetreibender darf eigene Banner aktiveren";
-$GLOBALS['strAllowCreateAccounts'] = "Erlaube diesem Benutzer neue Benutzerkonten anzulegen";
 $GLOBALS['strAdvertiserLimitation'] = "Zeige nur Banner von diesem Werbetreibenden auf der Seite";
 $GLOBALS['strAllowAuditTrailAccess'] = "Diesem Benutzer die Ansicht des Prüfprotokolls erlauben";
 
@@ -489,6 +488,7 @@ $GLOBALS['strACL'] = "Auslieferungsoptionen";
 $GLOBALS['strEqualTo'] = "ist gleich";
 $GLOBALS['strDifferentFrom'] = "ist ungleich";
 $GLOBALS['strContains'] = "enthält";
+$GLOBALS['strNotContains'] = "beinhaltet nicht";
 $GLOBALS['strGreaterThan'] = "ist größer als";
 $GLOBALS['strLessThan'] = "ist kleiner als";
 $GLOBALS['strAND'] = "UND";                          // logical operator
@@ -726,7 +726,7 @@ $GLOBALS['strWarningInaccurateReport'] = "Einige der Statistikdaten dieses Beric
 
 //Validation
 $GLOBALS['strRequiredFieldLegend'] = "bezeichnet ein erforderliches Feld";
-$GLOBALS['strFormContainsErrors'] = "Diese Seite enthält Fehler, bitte berichtigen Sie die unten markierten Eingabefelder.";
+$GLOBALS['strFormContainsErrors'] = "Die Eingabe enthält Fehler, bitte berichtigen Sie die unten markierten Eingabefelder.";
 $GLOBALS['strXRequiredField'] = "%s ist erforderlich";
 $GLOBALS['strEmailField'] = "Bitte geben Sie eine gültige E-Mail Adresse ein";
 $GLOBALS['strNumericField'] = "Bitte geben Sie einen numerischen Wert ein (nur Ziffern sind erlaubt)";

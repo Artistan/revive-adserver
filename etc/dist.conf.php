@@ -103,14 +103,6 @@ ftpUsername                         =
 ftpPassword                         =
 ftpPassive                          =
 
-[origin]
-type                                = "None"
-host                                =
-port                                = 80
-script                              = /www/delivery/dxmlrpc.php
-timeout                             = 10
-protocol                            = http
-
 ;------------------------------------------------------------------------------------------;
 ; Delivery Details                                                                         ;
 ;------------------------------------------------------------------------------------------;
@@ -154,8 +146,8 @@ compactPolicy                       = CUR ADM OUR NOR STA NID
 policyLocation                      =
 
 [privacy]
-disableViewerId                     = false
-anonymiseIp                         = false
+disableViewerId                     = true
+anonymiseIp                         = true
 
 ;------------------------------------------------------------------------------------------;
 ; User Interface Settings                                                                  ;

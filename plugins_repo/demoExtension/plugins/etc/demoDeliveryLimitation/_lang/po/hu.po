@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: revive-adserver\n"
-"Last-Translator: mbeccati <matteo@beccati.com>\n"
+"Last-Translator: Matteo Beccati (mbeccati)\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
 "MIME-Version: 1.0\n"
@@ -15,5 +15,5 @@ msgstr ""
 
 #: plugins_repo/demoExtension/plugins/deliveryLimitations/demoDeliveryLimitation/demoLimitation.class.php:49
 msgid "Demo"
-msgstr "Demo"
+msgstr "Demó"
 

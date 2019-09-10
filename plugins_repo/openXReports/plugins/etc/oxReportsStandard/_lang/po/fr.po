@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: revive-adserver\n"
-"Last-Translator: mbeccati <matteo@beccati.com>\n"
+"Last-Translator: Matteo Beccati (mbeccati)\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
@@ -203,7 +203,7 @@ msgstr ""
 
 #: plugins_repo/openXReports/plugins/reports/oxReportsStandard/liveCampaignDeliveryReport.class.php:515
 msgid "Override"
-msgstr ""
+msgstr "Remplacer"
 
 #: plugins_repo/openXReports/plugins/reports/oxReportsStandard/liveCampaignDeliveryReport.class.php:517
 msgid "Remnant"

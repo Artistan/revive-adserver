@@ -296,7 +296,7 @@ $GLOBALS['strSendDeactivationWarning'] = "Stuur een e-mail wanneer de campagne g
 $GLOBALS['strAllowClientModifyBanner'] = "Deze gebruiker kan zijn eigen banners wijzigen";
 $GLOBALS['strAllowClientDisableBanner'] = "Deze gebruiker kan zijn eigen banners deactiveren";
 $GLOBALS['strAllowClientActivateBanner'] = "Deze gebruiker kan zijn eigen banners activeren";
-$GLOBALS['strAllowCreateAccounts'] = "Sta deze gebruiker toe nieuwe accounts aan te maken";
+$GLOBALS['strAllowCreateAccounts'] = "Deze gebruiker toestaan de gebruikers van dit account te beheren";
 $GLOBALS['strAdvertiserLimitation'] = "Slechts één banner van deze adverteerder op een webpagina weergeven";
 $GLOBALS['strAllowAuditTrailAccess'] = "Deze gebruiker toegang tot het Audit logboek toestaan";
 
@@ -522,7 +522,9 @@ $GLOBALS['strTextBelow'] = "Tekst onder banner";
 $GLOBALS['strWeight'] = "Gewicht";
 $GLOBALS['strAlt'] = "Alternative tekst";
 $GLOBALS['strStatusText'] = "Status tekst";
+$GLOBALS['strCampaignsWeight'] = "Gewicht van de campagne";
 $GLOBALS['strBannerWeight'] = "Banner gewicht";
+$GLOBALS['strBannersWeight'] = "Gewicht van de banner";
 $GLOBALS['strAdserverTypeGeneric'] = "Generieke HTML Banner";
 $GLOBALS['strDoNotAlterHtml'] = "Breng geen wijzigingen aan in HTML";
 $GLOBALS['strGenericOutputAdServer'] = "Generiek";
@@ -1168,7 +1170,7 @@ $GLOBALS['strZoneRemovedCampaign'] = "Campagne is ontkoppeld van zone <a href='%
 
 $GLOBALS['strChannelHasBeenAdded'] = "Verzameling uitleveringsregels <a href='%s'>%s</a> is toegevoegd. <a href='%s'>Stel de uitleveringsregels in.</a>";
 $GLOBALS['strChannelHasBeenUpdated'] = "Verzameling uitleveringsregels <a href='%s'>%s</a> is bijgewerkt";
-$GLOBALS['strChannelAclHasBeenUpdated'] = "De uitleveringsregels voor de verzameling <a href='%s'>%s</a> zijn bijgewerkt";
+$GLOBALS['strChannelAclHasBeenUpdated'] = "Uitleveringsopties voor de verzameling uitleveringsregels <a href='%s'>%s</a> is bijgewerkt";
 $GLOBALS['strChannelHasBeenDeleted'] = "Verzameling uitleveringsregels <b>%s</b> is verwijderd";
 $GLOBALS['strChannelsHaveBeenDeleted'] = "Alle geselecteerde verzamelingen uitleveringsregels zijn verwijderd";
 $GLOBALS['strChannelHasBeenDuplicated'] = "Verzameling uitleveringsregels <a href='%s'>%s</a> is gekopieerd naar <a href='%s'>%s</a>";
