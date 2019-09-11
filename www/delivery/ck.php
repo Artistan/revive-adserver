@@ -603,6 +603,7 @@ $_SERVER['REMOTE_HOST'] = $_SERVER['REMOTE_ADDR'];
 }
 function MAX_remotehostSetGeoInfo()
 {
+$GLOBALS['_MAX']['GEO_IP'] = '24.24.24.24';
 if (!function_exists('parseDeliveryIniFile')) {
 
 }
@@ -3143,7 +3144,7 @@ $paramStr = $conf['var']['params'] . '=';
 $paramPos = strpos($qs, $paramStr);
 if (is_numeric($paramPos)) {
 $qs = urldecode(substr($qs, $paramPos + strlen($paramStr)));
-$delim = $qs{0};
+$delim = $qs[0];
 if (is_numeric($delim)) {
 $delim = substr($qs, 1, $delim);
 }

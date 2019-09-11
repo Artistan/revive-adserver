@@ -333,7 +333,7 @@ class OA_Admin_Option
             	$showBreak = true;
             } else {
             	// Show the section header
-            	$this->_showStartSection($aSection['text'], NULL, $disableSubmit, $imgPath);
+            	$this->_showStartSection($aSection['text'], [], $disableSubmit, $imgPath);
             }
 
             $sectionHasRequiredField = false;
@@ -403,7 +403,7 @@ class OA_Admin_Option
             					}
             				}
             			}
-            			if ($aItem[type] != 'break') {
+            			if ($aItem['type'] != 'break') {
             			    $showBreak = true;
             			}
             		} else {
@@ -974,7 +974,7 @@ class OA_Admin_Option
 
     function _display_to_bytes($val) {
         $val = trim($val);
-        $last = strtolower($val{strlen($val)-1});
+        $last = strtolower($val[strlen($val)-1]);
         switch($last) {
             // The 'G' modifier is available since PHP 5.1.0
             case 'g':

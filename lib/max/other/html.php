@@ -1659,14 +1659,14 @@ function MAX_displayNavigationChannel($pageName, $aOtherChannels, $aEntities)
         if (!empty($channelId)) {
             $builder = new OA_Admin_UI_Model_InventoryPageHeaderModelBuilder();
             $oHeaderModel = $builder->buildEntityHeader(array(
-                array("name" => $publisherName, url => $publisherEditUrl),
+                array("name" => $publisherName, 'url' => $publisherEditUrl),
                 array("name" => $channelName)), "channel", "edit");
             phpAds_PageHeader($tabValue, $oHeaderModel);
         }
         else {
             $builder = new OA_Admin_UI_Model_InventoryPageHeaderModelBuilder();
             $oHeaderModel = $builder->buildEntityHeader(array(
-                array("name" => $publisherName, url => $publisherEditUrl),
+                array("name" => $publisherName, 'url' => $publisherEditUrl),
                 array("name" => $channelName)), "channel", "edit-new");
             phpAds_PageHeader($tabValue, $oHeaderModel);
         }
@@ -1853,6 +1853,11 @@ function addBannerPageTools($advertiserId, $campaignId, $bannerId, $aOtherCampai
 
 function addWebsitePageTools($websiteId)
 {
+    $token = phpAds_SessionGetToken();
+    
+    if (!empty($websiteId) && (OA_Permission::isAccount(OA_ACCOUNT_ADMIN) || OA_Permission::isAccount(OA_ACCOUNT_MANAGER))) {
+        addPageLinkTool($GLOBALS["strDuplicate"], MAX::constructUrl(MAX_URL_ADMIN, "affiliate-duplicate.php?token=".urlencode($token)."&affiliateid=$websiteId"), "iconWebsiteDuplicate");
+    }
     if (!empty($websiteId) && (OA_Permission::isAccount(OA_ACCOUNT_ADMIN)
         || OA_Permission::isAccount(OA_ACCOUNT_MANAGER)
         || OA_Permission::hasPermission(OA_PERM_ZONE_ADD))) {
